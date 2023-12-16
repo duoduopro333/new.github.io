@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<title>二进制转换</title>
+</head>
+
+<body>
+<form>
+<input type="number" id="input" placeholder="输入需要转化的十进制数字" >
+</form>
+<div onclick="n()" style="border:1px black solid;text-align: center;width: 60px;margin: 10px 0px 0px 55px;background-color: green;" >查询</div>
+<h1 id="number"></h1>
+<script>
+function n(){
+    
+var a=Math.max(document.getElementById("input").value).toString(2);
+document.getElementById("number").innerHTML="<h4>你输入的值对应的二进制数为</h4><br><h4 style='color: blue;'>"+a+"</h4>";}
+</script>
+
+</body>
+</html>
